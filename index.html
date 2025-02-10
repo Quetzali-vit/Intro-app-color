@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center fw-bold">🎨 Selector de Color RGB</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div id="colorBox" class="color-box rounded-top"></div>
+                    <div class="card-body text-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <p id="hexCode" class="fw-bold fs-4 m-0">#000000</p>
+                            <button id="copyBtn" class="btn btn-outline-dark btn-sm ms-2">📋 Copiar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color Picker -->
+                <div class="text-center mt-3">
+                    <label for="colorPicker" class="form-label fw-bold">Selecciona un color:</label>
+                    <input type="color" id="colorPicker" class="form-control-color">
+                </div>
+
+                <!-- Sliders y Campos de Entrada -->
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <label for="red" class="fw-bold">Rojo</label>
+                        <input type="range" id="red" class="form-range custom-range" min="0" max="255" value="0">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="redInput" class="form-control text-center" min="0" max="255" value="0">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <label for="green" class="fw-bold">Verde</label>
+                        <input type="range" id="green" class="form-range custom-range" min="0" max="255" value="0">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="greenInput" class="form-control text-center" min="0" max="255" value="0">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <label for="blue" class="fw-bold">Azul</label>
+                        <input type="range" id="blue" class="form-range custom-range" min="0" max="255" value="0">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="blueInput" class="form-control text-center" min="0" max="255" value="0">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
